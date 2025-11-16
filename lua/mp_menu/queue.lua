@@ -43,6 +43,7 @@ function QUEUE_HEADER:Init()
 	self.Label = vgui.Create( "DLabel", self )
 	self.Label:SetText( "ОЧЕРЕДЬ" )
 	self.Label:SetFont( "MP.QueueHeader" )
+	self.Label:SizeToContents()
 
 	self.AddVidBtn = vgui.Create( "MP.AddVideoButton", self )
 
