@@ -38,21 +38,11 @@ local HttpHeaders = {
 
 function SERVICE:Fetch( url, onReceive, onFailure, headers )
 
-	if MediaPlayer.DEBUG then
-		print( "SERVICE.Fetch", url )
-	end
-
 	local request = {
 		url			= url,
 		method		= "GET",
 
 		success = function( code, body, headers )
-			if MediaPlayer.DEBUG then
-				print("HTTP Results[" .. code .. "]:", url)
-				PrintTable(headers)
-				print(body)
-			end
-
 			if isfunction(onReceive) then
 				onReceive( body, body:len(), headers, code )
 			end
@@ -72,11 +62,6 @@ function SERVICE:Fetch( url, onReceive, onFailure, headers )
 		request.headers = tbl
 	else
 		request.headers = HttpHeaders
-	end
-
-	if MediaPlayer.DEBUG then
-		print "MediaPlayer.Service.Fetch REQUESTING"
-		PrintTable(request)
 	end
 
 	HTTP(request)
