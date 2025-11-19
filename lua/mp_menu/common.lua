@@ -11,7 +11,8 @@ local FontTbl = {
 	font = "Roboto Medium",
 	size = 21,
 	weight = 400,
-	antialias = true
+	antialias = true,
+	extended = true
 }
 
 surface.CreateFont( "MP.MediaTitle", FontTbl )
@@ -196,7 +197,7 @@ function ADDED_BY:Init()
 
 	self.PrefixLbl = vgui.Create( "DLabel", self )
 	self.PrefixLbl:SetFont( "MP.Prefix" )
-	self.PrefixLbl:SetText( "ADDED BY" )
+	self.PrefixLbl:SetText( "ДОБАВЛЕНО" )
 	self.PrefixLbl:SetTextColor( color_white )
 	self.PrefixLbl:SetContentAlignment( 8 )
 

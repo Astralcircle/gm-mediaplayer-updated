@@ -82,7 +82,7 @@ function PANEL:OnMediaChanged( media )
 		self.FavBtn:Hide()
 		self.BtnList:Show()
 	else
-		self.MediaTitle:SetText( "No media playing" )
+		self.MediaTitle:SetText( "Ничего не проигрывается" )
 		self.MediaTitle:SetTooltip( "" )
 
 		self.AddedByLbl:Hide()

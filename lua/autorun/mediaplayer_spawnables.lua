@@ -39,8 +39,59 @@ AddMediaPlayerModel(
 	}
 )
 
+AddMediaPlayerModel(
+	"console_tv",
+	"Console TV",
+	"models/props/cs_militia/tv_console.mdl",
+	"entities/mediaplayer_tv4.png",
+	{
+		angle = Angle(-90, 90, 0),
+		offset = Vector(21.5, 28.1, 46),
+		width = 56,
+		height = 40
+	}
+)
+
+AddMediaPlayerModel(
+	"big_console_tv",
+	"Big Console TV",
+	"models/props/cs_militia/television_console01.mdl",
+	"entities/mediaplayer_tv5.png",
+	{
+		angle = Angle(-90, 90, 0),
+		offset = Vector(13.55, 24, 57),
+		width = 48,
+		height = 36
+	}
+)
+
+AddMediaPlayerModel(
+	"citizen_radio",
+	"Citizen Radio",
+	"models/props_lab/citizenradio.mdl",
+	"entities/mediaplayer_tv6.png",
+	{
+		angle = Angle(-90, 90, 0),
+		offset = Vector(8.51, 5.73, 15.56),
+		width = 17,
+		height = 4
+	}
+)
+
+AddMediaPlayerModel(
+	"mini_tv",
+	"Mini TV",
+	"models/props_lab/monitor01b.mdl",
+	"entities/mediaplayer_tv7.png",
+	{
+		angle = Angle(-89, 90, 0),
+		offset = Vector(6.26, 5.5, 4.95),
+		width = 9,
+		height = 9
+	}
+)
+
 if SERVER then
-	-- Fix for media player owner not getting set on alternate model spawn
 	hook.Add("PlayerSpawnedSENT", "MediaPlayer_SetOwner", function(ply, ent)
 		if not ent.IsMediaPlayerEntity then return end
 		ent:SetCreator(ply)

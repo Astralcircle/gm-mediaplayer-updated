@@ -127,12 +127,10 @@ end
 -----------------------------------------------------------]]
 
 local common = {
-	-- font		= "Open Sans Condensed",
-	-- font		= "Oswald",
-	font		= "Clear Sans Medium",
-	antialias	= true,
+	font		= "Tahoma",
+	extended	= true,
 	weight		= 400
 }
 
-surface.CreateFont( "MediaTitle", table.Merge(common, { size = 72 }) )
+surface.CreateFont( "MediaTitle", table.Merge(common, { size = 64 }) )
 surface.CreateFont( "MediaRequestButton", table.Merge(common, { size = 26 }) )

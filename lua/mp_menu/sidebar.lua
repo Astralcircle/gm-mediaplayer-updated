@@ -27,7 +27,7 @@ function PANEL:Init()
 	self.Tabs:Dock( FILL )
 
 	local curplaytab = vgui.Create( "MP.CurrentlyPlayingTab" )
-	self.Tabs:AddSheet( "CURRENTLY PLAYING", curplaytab, nil, false, false )
+	self.Tabs:AddSheet( "СЕЙЧАС ИГРАЕТ", curplaytab, nil, false, false )
 
 	-- TODO: Implement clientside media history for recently viewed tab
 	-- local panel = vgui.Create( "Panel" )
@@ -75,11 +75,6 @@ function SidebarPresenter:RegisterHook( hookname, callback )
 	table.insert( self.hooks, hookname )
 
 	hook.Add( hookname, "MP.SidebarPresenter", function(...)
-		if MediaPlayer.DEBUG then
-			print("MP.EVENTS.UI", hookname)
-			PrintTable({...})
-		end
-
 		return callback(...)
 	end )
 

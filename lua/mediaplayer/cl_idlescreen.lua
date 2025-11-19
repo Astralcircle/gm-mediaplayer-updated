@@ -54,9 +54,8 @@ local DefaultIdlescreen = [[
 <body>
 	<img src="asset://mapimage/gm_construct" class="background">
 	<div class="content">
-		<h1>No media playing</h1>
-		<p>Hold %s while looking at the media player to reveal the queue menu.</p>
-
+		<h1>Ничего не проигрывается</h1>
+		<p>Удерживайте %s, глядя на медиаплеер, чтобы открыть меню.</p>
 	</div>
 </body>
 </html>
