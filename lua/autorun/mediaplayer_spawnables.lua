@@ -46,7 +46,7 @@ AddMediaPlayerModel(
 	"entities/mediaplayer_tv4.png",
 	{
 		angle = Angle(-90, 90, 0),
-		offset = Vector(21.5,43-17 + 2.1,48-2),
+		offset = Vector(21.5, 28.1, 46),
 		width = 56,
 		height = 40
 	}
