@@ -65,6 +65,19 @@ AddMediaPlayerModel(
 	}
 )
 
+AddMediaPlayerModel(
+	"citizen_radio",
+	"Citizen Radio",
+	"models/props_lab/citizenradio.mdl",
+	"entities/mediaplayer_tv6.png",
+	{
+		angle  = Angle(-90, 90, 0),
+		offset = Vector(8.51, 5.73, 15.56),
+		width  = 17,
+		height = 4
+	}
+)
+
 if SERVER then
 	hook.Add("PlayerSpawnedSENT", "MediaPlayer_SetOwner", function(ply, ent)
 		if not ent.IsMediaPlayerEntity then return end
