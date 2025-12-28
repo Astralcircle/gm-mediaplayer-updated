@@ -13,6 +13,10 @@ local function AddMediaPlayerModel(classname, printname, model, icon, config)
 	list.Set("MediaPlayerModelConfigs", model, config)
 end
 
+-- Hack for Media Player - Extended Props support
+scripted_ents.Alias("mediaplayer_tv_ext", "mediaplayer_tv")
+duplicator.Allow("mediaplayer_tv_ext")
+
 AddMediaPlayerModel(
 	"huge_billboard",
 	"Huge Billboard",
