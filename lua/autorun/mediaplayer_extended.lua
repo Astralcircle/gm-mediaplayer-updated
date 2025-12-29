@@ -159,3 +159,48 @@ AddMediaPlayerModel(
 		height = 17
 	}
 )
+
+if util.IsValidModel("models/blacknecro/tv_plasma_4_3.mdl") then
+	AddMediaPlayerModel(
+		"wiremod_4_3_tv",
+		"(Wire) 4:3 TV",
+		"models/blacknecro/tv_plasma_4_3.mdl",
+		"entities/mediaplayer_tv15.png",
+		{
+			angle = Angle(-90, 90, 0),
+			offset = Vector(0.13, 28.10, 21.5),
+			width = 56,
+			height = 43
+		}
+	)
+end
+
+if util.IsValidModel("models/kobilica/wiremonitorbig.mdl") then
+	AddMediaPlayerModel(
+		"wiremod_monitor_big",
+		"(Wire) Monitor Big",
+		"models/kobilica/wiremonitorbig.mdl",
+		"entities/mediaplayer_tv16.png",
+		{
+			angle = Angle(-90, 90, 0),
+			offset = Vector(0.13, 11.5, 24.43),
+			width = 23,
+			height = 23
+		}
+	)
+end
+
+if util.IsValidModel("models/kobilica/wiremonitorsmall.mdl") then
+	AddMediaPlayerModel(
+		"wiremod_monitor_small",
+		"(Wire) Monitor Small",
+		"models/kobilica/wiremonitorsmall.mdl",
+		"entities/mediaplayer_tv17.png",
+		{
+			angle = Angle(-90, 90, 0),
+			offset = Vector(0.13, 4.5, 9.51),
+			width = 9,
+			height = 9
+		}
+	)
+end
