@@ -160,6 +160,162 @@ AddMediaPlayerModel(
 	}
 )
 
+AddMediaPlayerModel(
+	"plate_tv_05_075",
+	"Plate TV (05x075)",
+	"models/hunter/plates/plate05x075.mdl",
+	"entities/mediaplayer_tv18.png",
+	{
+		angle = Angle(0, 90, 0),
+		offset = Vector(-12.11, 23.98, 1.75),
+		width = 36.09,
+		height = 24.22
+	}
+)
+
+AddMediaPlayerModel(
+	"plate_tv_075_1",
+	"Plate TV (075x1)",
+	"models/hunter/plates/plate075x1.mdl",
+	"entities/mediaplayer_tv19.png",
+	{
+		angle = Angle(0, 90, 0),
+		offset = Vector(-23.98, 23.97, 1.75),
+		width = 47.95,
+		height = 36.09
+	}
+)
+
+AddMediaPlayerModel(
+	"plate_tv_1_2",
+	"Plate TV (1x2)",
+	"models/hunter/plates/plate1x2.mdl",
+	"entities/mediaplayer_tv20.png",
+	{
+		angle = Angle(0, 90, 0),
+		offset = Vector(-23.98, 47.7, 1.75),
+		width = 95.4,
+		height = 47.95
+	}
+)
+
+AddMediaPlayerModel(
+	"plate_tv_2_3",
+	"Plate TV (2x3)",
+	"models/hunter/plates/plate2x3.mdl",
+	"entities/mediaplayer_tv21.png",
+	{
+		angle = Angle(0, 90, 0),
+		offset = Vector(-47.7, 71.42, 1.75),
+		width = 142.85,
+		height = 95.4
+	}
+)
+
+AddMediaPlayerModel(
+	"plate_tv_2_4",
+	"Plate TV (2x4)",
+	"models/hunter/plates/plate2x4.mdl",
+	"entities/mediaplayer_tv22.png",
+	{
+		angle = Angle(0, 90, 0),
+		offset = Vector(-47.7, 95.15, 1.75),
+		width = 190.3,
+		height = 95.4
+	}
+)
+
+AddMediaPlayerModel(
+	"plate_tv_3_4",
+	"Plate TV (3x4)",
+	"models/hunter/plates/plate3x4.mdl",
+	"entities/mediaplayer_tv23.png",
+	{
+		angle = Angle(0, 90, 0),
+		offset = Vector(-71.43, 95.15, 1.75),
+		width = 190.3,
+		height = 142.85
+	}
+)
+
+AddMediaPlayerModel(
+	"plate_tv_3_5",
+	"Plate TV (3x5)",
+	"models/hunter/plates/plate3x5.mdl",
+	"entities/mediaplayer_tv24.png",
+	{
+		angle = Angle(0, 90, 0),
+		offset = Vector(-71.43, 118.87, 1.75),
+		width = 237.75,
+		height = 142.85
+	}
+)
+
+AddMediaPlayerModel(
+	"plate_tv_4_7",
+	"Plate TV (4x7)",
+	"models/hunter/plates/plate4x7.mdl",
+	"entities/mediaplayer_tv25.png",
+	{
+		angle = Angle(0, 90, 0),
+		offset = Vector(-95.15, 166.32, 1.75),
+		width = 332.65,
+		height = 190.3
+	}
+)
+
+AddMediaPlayerModel(
+	"plate_tv_4_8",
+	"Plate TV (4x8)",
+	"models/hunter/plates/plate4x8.mdl",
+	"entities/mediaplayer_tv24.png",
+	{
+		angle = Angle(0, 90, 0),
+		offset = Vector(-95.15, 190.05, 1.75),
+		width = 380.1,
+		height = 190.3
+	}
+)
+
+AddMediaPlayerModel(
+	"plate_tv_8_16",
+	"Plate TV (8x16)",
+	"models/hunter/plates/plate8x16.mdl",
+	"entities/mediaplayer_tv25.png",
+	{
+		angle = Angle(0, 90, 0),
+		offset = Vector(-190.05, 379.85, 2.5),
+		width = 759.7,
+		height = 380.1
+	}
+)
+
+AddMediaPlayerModel(
+	"plate_tv_16_24",
+	"Plate XL (16x24)",
+	"models/hunter/plates/plate16x24.mdl",
+	"entities/mediaplayer_tv24.png",
+	{
+		angle = Angle(0, 90, 0),
+		offset = Vector(-379.85, 569.65, 3),
+		width = 1139.3,
+		height = 769.7
+	}
+)
+
+AddMediaPlayerModel(
+	"plate_tv_24_32",
+	"Plate XL (24x32)",
+	"models/hunter/plates/plate24x32.mdl",
+	"entities/mediaplayer_tv25.png",
+	{
+		angle = Angle(0, 90, 0),
+		offset = Vector(-569.95, 759.45, 3),
+		width = 1518.9,
+		height = 1139.3
+	}
+)
+
 if util.IsValidModel("models/blacknecro/tv_plasma_4_3.mdl") then
 	AddMediaPlayerModel(
 		"wiremod_4_3_tv",
