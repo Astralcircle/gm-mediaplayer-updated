@@ -168,8 +168,8 @@ AddMediaPlayerModel(
 	{
 		angle = Angle(0, 90, 0),
 		offset = Vector(-12.11, 23.98, 1.75),
-		width = 36.09,
-		height = 24.22
+		width = 36,
+		height = 24
 	}
 )
 
@@ -181,8 +181,8 @@ AddMediaPlayerModel(
 	{
 		angle = Angle(0, 90, 0),
 		offset = Vector(-23.98, 23.97, 1.75),
-		width = 47.95,
-		height = 36.09
+		width = 47,
+		height = 36
 	}
 )
 
@@ -194,8 +194,8 @@ AddMediaPlayerModel(
 	{
 		angle = Angle(0, 90, 0),
 		offset = Vector(-23.98, 47.7, 1.75),
-		width = 95.4,
-		height = 47.95
+		width = 95,
+		height = 47
 	}
 )
 
@@ -207,8 +207,8 @@ AddMediaPlayerModel(
 	{
 		angle = Angle(0, 90, 0),
 		offset = Vector(-47.7, 71.42, 1.75),
-		width = 142.85,
-		height = 95.4
+		width = 142,
+		height = 95
 	}
 )
 
@@ -220,8 +220,8 @@ AddMediaPlayerModel(
 	{
 		angle = Angle(0, 90, 0),
 		offset = Vector(-47.7, 95.15, 1.75),
-		width = 190.3,
-		height = 95.4
+		width = 190,
+		height = 95
 	}
 )
 
@@ -233,8 +233,8 @@ AddMediaPlayerModel(
 	{
 		angle = Angle(0, 90, 0),
 		offset = Vector(-71.43, 95.15, 1.75),
-		width = 190.3,
-		height = 142.85
+		width = 190,
+		height = 142
 	}
 )
 
@@ -246,8 +246,8 @@ AddMediaPlayerModel(
 	{
 		angle = Angle(0, 90, 0),
 		offset = Vector(-71.43, 118.87, 1.75),
-		width = 237.75,
-		height = 142.85
+		width = 237,
+		height = 142
 	}
 )
 
@@ -259,8 +259,8 @@ AddMediaPlayerModel(
 	{
 		angle = Angle(0, 90, 0),
 		offset = Vector(-95.15, 166.32, 1.75),
-		width = 332.65,
-		height = 190.3
+		width = 332,
+		height = 190
 	}
 )
 
@@ -268,12 +268,12 @@ AddMediaPlayerModel(
 	"plate_tv_4_8",
 	"Plate TV (4x8)",
 	"models/hunter/plates/plate4x8.mdl",
-	"entities/mediaplayer_tv24.png",
+	"entities/mediaplayer_tv26.png",
 	{
 		angle = Angle(0, 90, 0),
 		offset = Vector(-95.15, 190.05, 1.75),
-		width = 380.1,
-		height = 190.3
+		width = 380,
+		height = 190
 	}
 )
 
@@ -281,12 +281,12 @@ AddMediaPlayerModel(
 	"plate_tv_8_16",
 	"Plate TV (8x16)",
 	"models/hunter/plates/plate8x16.mdl",
-	"entities/mediaplayer_tv25.png",
+	"entities/mediaplayer_tv27.png",
 	{
 		angle = Angle(0, 90, 0),
 		offset = Vector(-190.05, 379.85, 2.5),
-		width = 759.7,
-		height = 380.1
+		width = 759,
+		height = 380
 	}
 )
 
@@ -294,12 +294,12 @@ AddMediaPlayerModel(
 	"plate_tv_16_24",
 	"Plate XL (16x24)",
 	"models/hunter/plates/plate16x24.mdl",
-	"entities/mediaplayer_tv24.png",
+	"entities/mediaplayer_tv28.png",
 	{
 		angle = Angle(0, 90, 0),
 		offset = Vector(-379.85, 569.65, 3),
-		width = 1139.3,
-		height = 769.7
+		width = 1139,
+		height = 769
 	}
 )
 
@@ -307,12 +307,12 @@ AddMediaPlayerModel(
 	"plate_tv_24_32",
 	"Plate XL (24x32)",
 	"models/hunter/plates/plate24x32.mdl",
-	"entities/mediaplayer_tv25.png",
+	"entities/mediaplayer_tv29.png",
 	{
 		angle = Angle(0, 90, 0),
 		offset = Vector(-569.95, 759.45, 3),
-		width = 1518.9,
-		height = 1139.3
+		width = 1518,
+		height = 1139
 	}
 )
 
