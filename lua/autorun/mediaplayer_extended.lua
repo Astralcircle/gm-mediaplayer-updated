@@ -159,13 +159,3 @@ AddMediaPlayerModel(
 		height = 17
 	}
 )
-
-if SERVER then
-	hook.Add("PlayerSpawnedSENT", "MediaPlayer_SetOwner", function(ply, ent)
-		if not ent.IsMediaPlayerEntity then return end
-		ent:SetCreator(ply)
-
-		local mediaplayer = ent:GetMediaPlayer()
-		mediaplayer:SetOwner(ply)
-	end)
-end
