@@ -29,7 +29,7 @@ local function HasMedia( mp )
 end
 
 AddMediaPlayerProperty( "mp-pause", {
-	MenuLabel	=	"Pause",
+	MenuLabel	=	"Пауза",
 	MenuIcon	=	"icon16/control_pause_blue.png",
 
 	Filter		=	function( self, ent, ply )
@@ -44,7 +44,7 @@ AddMediaPlayerProperty( "mp-pause", {
 })
 
 AddMediaPlayerProperty( "mp-resume", {
-	MenuLabel	=	"Resume",
+	MenuLabel	=	"Продолжить",
 	MenuIcon	=	"icon16/control_play_blue.png",
 
 	Filter		=	function( self, ent, ply )
@@ -59,7 +59,7 @@ AddMediaPlayerProperty( "mp-resume", {
 })
 
 AddMediaPlayerProperty( "mp-skip", {
-	MenuLabel	=	"Skip",
+	MenuLabel	=	"Пропустить",
 	MenuIcon	=	"icon16/control_end_blue.png",
 
 	Filter		=	function( self, ent, ply )
@@ -74,7 +74,7 @@ AddMediaPlayerProperty( "mp-skip", {
 })
 
 AddMediaPlayerProperty( "mp-seek", {
-	MenuLabel	=	"Seek",
+	MenuLabel	=	"Перемотать",
 	-- MenuIcon	=	"icon16/timeline_marker.png",
 	MenuIcon	=	"icon16/control_fastforward_blue.png",
 
@@ -88,21 +88,21 @@ AddMediaPlayerProperty( "mp-seek", {
 
 		Derma_StringRequest(
 			"Media Player",
-			"Enter a time in HH:MM:SS format (hours, minutes, seconds):",
+			"Введите время в формате ЧЧ:ММ:СС (часы, минуты, секунды):",
 			"", -- Default text
 			function( time )
 				MediaPlayer.Seek( ent, time )
 			end,
 			function() end,
-			"Seek",
-			"Cancel"
+			"Перемотать",
+			"Отмена"
 		)
 
 	end
 })
 
 AddMediaPlayerProperty( "mp-request-url", {
-	MenuLabel	=	"Request URL",
+	MenuLabel	=	"Запросить ссылку",
 	MenuIcon	=	"icon16/link_add.png",
 	Filter		=	IsMediaPlayer,
 
@@ -114,7 +114,7 @@ AddMediaPlayerProperty( "mp-request-url", {
 })
 
 AddMediaPlayerProperty( "mp-copy-url", {
-	MenuLabel	=	"Copy URL to clipboard",
+	MenuLabel	=	"Скопировать ссылку в буфер обмена",
 	MenuIcon	=	"icon16/paste_plain.png",
 
 	Filter		=	function( self, ent, ply )
@@ -136,7 +136,7 @@ AddMediaPlayerProperty( "mp-copy-url", {
 })
 
 AddMediaPlayerProperty( "mp-enable", {
-	MenuLabel	=	"Turn On",
+	MenuLabel	=	"Включить",
 	MenuIcon	=	"icon16/lightbulb.png",
 
 	Filter		=	function( self, ent, ply )
@@ -152,7 +152,7 @@ AddMediaPlayerProperty( "mp-enable", {
 })
 
 AddMediaPlayerProperty( "mp-disable", {
-	MenuLabel	=	"Turn Off",
+	MenuLabel	=	"Выключить",
 	MenuIcon	=	"icon16/lightbulb_off.png",
 
 	Filter		=	function( self, ent, ply )

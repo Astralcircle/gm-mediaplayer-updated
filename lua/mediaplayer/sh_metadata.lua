@@ -109,11 +109,6 @@ function MediaPlayer.Metadata:Save( media )
 
 	if istable(results) then -- update
 
-		if MediaPlayer.DEBUG then
-			print("MediaPlayer.Metadata.Save Results:")
-			PrintTable(results)
-		end
-
 		results = results[1]
 
 		local expired = ( tonumber(results.expired) == 1 )
@@ -150,11 +145,6 @@ function MediaPlayer.Metadata:Save( media )
 			string.format( "%d,", os.time() ) ..
 			string.format( "%d)", os.time() )
 
-	end
-
-	if MediaPlayer.DEBUG then
-		print("MediaPlayer.Metadata.Save")
-		print(query)
 	end
 
 	results = sql.Query(query)

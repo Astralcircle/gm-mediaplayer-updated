@@ -104,10 +104,6 @@ function MEDIAPLAYER:SetPlayerState( state )
 	local current = self._State
 	self._State = state
 
-	if MediaPlayer.DEBUG then
-		print( "MEDIAPLAYER.SetPlayerState", state )
-	end
-
 	if current ~= state then
 		self:OnPlayerStateChanged( current, state )
 	end
@@ -116,10 +112,6 @@ end
 function MEDIAPLAYER:OnPlayerStateChanged( old, new )
 	local media = self:GetMedia()
 	local validMedia = IsValid(media)
-
-	if MediaPlayer.DEBUG then
-		print( "MEDIAPLAYER.OnPlayerStateChanged", old .. " => " .. new )
-	end
 
 	if new == MP_STATE_PLAYING then
 		if validMedia and not media:IsPlaying() then
@@ -381,10 +373,6 @@ function MEDIAPLAYER:OnMediaStarted( media )
 
 	media = media or self:CurrentMedia()
 
-	if MediaPlayer.DEBUG then
-		print( "MEDIAPLAYER.OnMediaStarted", media )
-	end
-
 	if IsValid(media) then
 
 		if SERVER then
@@ -423,10 +411,6 @@ end
 function MEDIAPLAYER:OnMediaFinished( media )
 
 	media = media or self:CurrentMedia()
-
-	if MediaPlayer.DEBUG then
-		print( "MEDIAPLAYER.OnMediaFinished", media )
-	end
 
 	if SERVER then
 		self:SetPlayerState( MP_STATE_ENDED )

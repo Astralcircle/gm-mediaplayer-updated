@@ -291,9 +291,9 @@ end
 
 function RequestButton:SetDisabled( disabled )
 	if disabled then
-		self:SetText( "SEARCH FOR MEDIA" )
+		self:SetText( "ПОИСК МЕДИА" )
 	else
-		self:SetText( "REQUEST URL" )
+		self:SetText( "ЗАПРОСИТЬ ССЫЛКУ" )
 	end
 
 	DButton.SetDisabled( self, disabled )
