@@ -49,12 +49,6 @@ function MediaPlayer.Metadata:Query( media )
 	if not id then return end
 
 	local query = ("SELECT * FROM `%s` WHERE id=%s"):format(TableName, sql.SQLStr(id))
-
-	if MediaPlayer.DEBUG then
-		print("MediaPlayer.Metadata.Query")
-		print(query)
-	end
-
 	local results = sql.QueryRow(query)
 
 	if results then
@@ -73,12 +67,6 @@ function MediaPlayer.Metadata:Query( media )
 			-- Set metadata entry as expired
 			query = "UPDATE `%s` SET expired=1 WHERE id=%s"
 			query = query:format( TableName, sql.SQLStr(id) )
-
-			if MediaPlayer.DEBUG then
-				print("MediaPlayer.Metadata.Query: Setting entry as expired")
-				print(query)
-			end
-
 			sql.Query( query )
 
 			return nil
