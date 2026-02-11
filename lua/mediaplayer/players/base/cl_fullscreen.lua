@@ -35,23 +35,32 @@ end
 cvars.AddChangeCallback( FullscreenCvar:GetName(), OnFullscreenConVarChanged )
 
 --[[---------------------------------------------------------
-	Client controls for toggling fullscreen
+	Centralized fullscreen toggle logic
 -----------------------------------------------------------]]
 
-inputhook.AddKeyPress( KEY_F11, "Toggle MediaPlayer Fullscreen", function()
-
-	local targetMP = nil
-
-	-- Find which media player we're looking at
-	MediaPlayer.DispatchScreenTrace(function(mp, x, y)
-		if not targetMP then
-			targetMP = mp
-		end
-	end)
-
-	-- only toggle if there's an active media player
+function MediaPlayer.ToggleFullscreen( targetMP )
 	if not targetMP then
-		return
+		-- First, check if any media player is already in fullscreen
+		for _, mp in pairs(MediaPlayer.List) do
+			if mp._isFullscreen then
+				targetMP = mp
+				break
+			end
+		end
+
+		-- If no fullscreen player found, find which media player we're looking at
+		if not targetMP then
+			MediaPlayer.DispatchScreenTrace(function(mp, x, y)
+				if not targetMP then
+					targetMP = mp
+				end
+			end)
+		end
+
+		-- only toggle if there's an active media player
+		if not targetMP then
+			return false
+		end
 	end
 
 	-- Toggle fullscreen for this specific player
@@ -67,6 +76,15 @@ inputhook.AddKeyPress( KEY_F11, "Toggle MediaPlayer Fullscreen", function()
 
 	hook.Run(MP.EVENTS.FULLSCREEN_STATE_CHANGED, targetMP._isFullscreen, not targetMP._isFullscreen)
 
+	return true
+end
+
+--[[---------------------------------------------------------
+	Client controls for toggling fullscreen
+-----------------------------------------------------------]]
+
+inputhook.AddKeyPress( KEY_F11, "Toggle MediaPlayer Fullscreen", function()
+	MediaPlayer.ToggleFullscreen()
 end )
 
 
