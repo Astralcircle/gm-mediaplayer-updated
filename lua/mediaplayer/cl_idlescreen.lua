@@ -56,7 +56,6 @@ local DefaultIdlescreen = [[
 	<div class="content">
 		<h1>{{title}}</h1>
 		<p>{{hint}}</p>
-
 	</div>
 </body>
 </html>

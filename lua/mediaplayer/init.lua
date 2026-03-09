@@ -18,7 +18,6 @@ AddCSLuaFile "shared.lua"
 AddCSLuaFile "sh_events.lua"
 AddCSLuaFile "sh_mediaplayer.lua"
 AddCSLuaFile "sh_services.lua"
-AddCSLuaFile "sh_history.lua"
 AddCSLuaFile "sh_metadata.lua"
 AddCSLuaFile "sh_cvars.lua"
 AddCSLuaFile "i18n/sh_i18n.lua"
@@ -35,9 +34,6 @@ function MediaPlayer.net.ReadMediaPlayer()
 	local mp = MediaPlayer.GetById(mpId)
 
 	if not IsValid(mp) then
-		if MediaPlayer.DEBUG then
-			print("MEDIAPLAYER.Request: Invalid media player ID", mpId, mp)
-		end
 		return false
 	end
 
