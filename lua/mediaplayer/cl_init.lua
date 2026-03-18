@@ -129,5 +129,5 @@ local common = {
 	weight		= 400
 }
 
-surface.CreateFont( "MediaTitle", table.Merge(common, { size = 72 }) )
+surface.CreateFont( "MediaTitle", table.Merge(common, { size = 64 }) )
 surface.CreateFont( "MediaRequestButton", table.Merge(common, { size = 26 }) )

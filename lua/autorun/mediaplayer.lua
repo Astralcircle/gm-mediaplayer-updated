@@ -58,7 +58,7 @@ local function LoadMediaPlayer()
 
 	if SERVER then
 		-- Add mediaplayer models
-		resource.AddWorkshop( "3001397905" )
+		resource.AddWorkshop( "3547065959" )
 
 		-- download clientside includes
 		AddCSLuaFile "includes/modules/browserpool.lua"
@@ -85,11 +85,9 @@ local function LoadMediaPlayer()
 	if SERVER then
 		AddCSLuaFile "menubar/mp_options.lua"
 		AddCSLuaFile "properties/mediaplayer.lua"
-		AddCSLuaFile "sandbox/mediaplayer_dupe.lua"
 	else
 		include "menubar/mp_options.lua"
 		include "properties/mediaplayer.lua"
-		include "sandbox/mediaplayer_dupe.lua"
 	end
 
 	--
